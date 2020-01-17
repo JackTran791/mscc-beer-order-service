@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.luv2code</groupId>
-        <artifactId>mssc-brewery-bom</artifactId>
-        <version>1.0.1</version>
+        <groupId>com.github.sfg-beer-works</groupId>
+        <artifactId>sfg-brewery-bom</artifactId>
+        <version>1.0.3</version>
     </parent>
-    <groupId>com.luv2code</groupId>
+
     <artifactId>mscc-beer-order-service</artifactId>
     <version>1.0.1</version>
     <name>mssc-beer-order-service</name>
@@ -15,21 +15,18 @@
 
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>javax.xml.bind</groupId>-->
-<!--            <artifactId>jaxb-api</artifactId>-->
-<!--            <version>${jaxb.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.sun.xml.bind</groupId>-->
-<!--            <artifactId>jaxb-core</artifactId>-->
-<!--            <version>${jaxb.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.sun.xml.bind</groupId>-->
-<!--            <artifactId>jaxb-impl</artifactId>-->
-<!--            <version>${jaxb.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
